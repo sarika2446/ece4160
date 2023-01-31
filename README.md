@@ -1,1 +1,3 @@
-# ece4160
+# ECE 4160
+## Sarika Kannan
+
