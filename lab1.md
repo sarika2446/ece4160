@@ -13,7 +13,7 @@ In this lab, I gained familiarity with the Artemis Nano board by running four de
 
 ### Blink it Up
 
-For this program, I used the Blink example code that came with the Arduino IDE. This program allowed me to blink the onboard LED.
+For this program, I used the Blink example code that came with the Arduino IDE. This program allowed me to blink the onboard LED. I slowed the baud rate down to 9600 to be able to see the blinking better.
 
 
 ### Serial
