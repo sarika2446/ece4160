@@ -26,14 +26,23 @@ https://user-images.githubusercontent.com/123786420/216197183-fdb9bf93-b8f6-4c50
 For this program, I used the Example04_Serial example code that came with the Artemis Nano installation. This program printed out text to the serial monitor and also "echoed" any text I provided as input, by printing it to the serial monitor. I had to adjust the serial monitor's baud rate to 115200, matching the rate defined in the code, in order to be able to view the output.
 
 
+https://user-images.githubusercontent.com/123786420/216197244-40ba4849-78f7-4b7d-856e-d0a451334597.mov
+
+
+
 ### Analog Read
 
 For this program, I used the Example02_AnalogRead example code that came with the Artemis Nano installation. 
 
 
+
 ### Microphone Output
 
 For this program, I used the Example1_MicrophoneOutput example code that came with the Artemis Nano installation.
+
+
+https://user-images.githubusercontent.com/123786420/216197314-6c51cbef-3a10-48c8-aff6-5cc3e09b0a00.mov
+
 
 
 ## Conclusion
