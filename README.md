@@ -1,6 +1,6 @@
 # Sarika's ECE 4160 Labs
 
-<img align="right" src="https://user-images.githubusercontent.com/123786420/215877446-004e6b2c-b8a6-4e5c-b380-2110ccacba58.jpg">
+<img align="right" src="https://user-images.githubusercontent.com/123786420/216201631-ade1adfa-2e86-4b5b-953f-54bcfefe45af.jpg">
 
 Hi! My name is Sarika Kannan and I am a senior majoring in ECE. I am a member of the Engineering World Health project team and Dr. Butcher's lab in the BME department.
 
