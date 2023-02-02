@@ -15,15 +15,11 @@ In this lab, I gained familiarity with the Artemis Nano board by running four de
 
 For this program, I used the Blink example code that came with the Arduino IDE. This program allowed me to blink the onboard LED. I slowed the baud rate down to 9600 to be able to see the blinking better.
 
-<iframe 
-        width="414" 
-        height="736" 
-        src="https://www.youtube.com/embed/yjpnnuYoAPc" 
-        title="Blink" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen
-        >
-</iframe>
+
+
+https://user-images.githubusercontent.com/123786420/216197183-fdb9bf93-b8f6-4c50-b8ec-8bcd19af9257.mov
+
+
 
 ### Serial
 
