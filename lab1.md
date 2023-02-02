@@ -32,7 +32,7 @@ For this program, I used the Example04_Serial example code that came with the Ar
 
 ### Analog Read
 
-For this program, I used the Example02_AnalogRead example code that came with the Artemis Nano installation. 
+For this program, I used the Example02_AnalogRead example code that came with the Artemis Nano installation. This program printed out the temperature measured, using the board's temperature sensor, and printed it to the serial monitor. In this video, I blew air on the temperature sensor, causing its measured temperature to slowly rise from around 32300 to 33000.
 
 
 [![Analog Read](https://img.youtube.com/vi/ULwuDB3LZps/0.jpg)](https://www.youtube.com/watch?v=ULwuDB3LZps "Analog Read")
@@ -41,7 +41,7 @@ For this program, I used the Example02_AnalogRead example code that came with th
 
 ### Microphone Output
 
-For this program, I used the Example1_MicrophoneOutput example code that came with the Artemis Nano installation.
+For this program, I used the Example1_MicrophoneOutput example code that came with the Artemis Nano installation. The program printed out the loudest frequency detected by the board's microphone to the serial monitor. In this video, I played a 600 Hz tone, and the value printed to the serial monitor was consistent and almost exactly 600 Hz.
 
 [![Microphone Output](https://img.youtube.com/vi/lORvnI_mxfM/0.jpg)](https://www.youtube.com/watch?v=lORvnI_mxfM "Microphone Output")
 
