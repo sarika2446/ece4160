@@ -34,7 +34,7 @@ https://user-images.githubusercontent.com/123786420/216197244-40ba4849-78f7-4b7d
 
 For this program, I used the Example02_AnalogRead example code that came with the Artemis Nano installation. 
 
-
+[![Analog Read](https://img.youtube.com/vi/ULwuDB3LZp/0.jpg)](https://www.youtube.com/watch?v=ULwuDB3LZps)
 
 ### Microphone Output
 
