@@ -11,7 +11,7 @@
 
 ### Configurations
 
-<img width="496" alt="Screen Shot 2023-02-14 at 1 33 38 AM" src="https://user-images.githubusercontent.com/123786420/218657830-c6f58806-43ad-4ae5-84cb-4efbf3f27cbb.png">
+<img width="493" alt="Screen Shot 2023-02-14 at 1 37 01 AM" src="https://user-images.githubusercontent.com/123786420/218658420-61b187a6-2461-445f-9a06-b281ad76ecea.png">
 
 ### Demo.ipynb
 
