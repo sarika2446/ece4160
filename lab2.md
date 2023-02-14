@@ -72,5 +72,6 @@ For this task, I create a case **GET_TIME_MILLIS** in the function **handle_comm
 
 ### Limitations
 
+One second of a 16-bit values sent at 150 Hz would take 2400 bits of memory, or 0.3 kB. This means that 384 kB of RAM could store 384/0.3 = 1280 seconds, or 21 minutes and 20 seconds, of 16-bit values at 150 Hz. However, this is assuming there is zero overhead, so in reality, the time is probably far less than this value.
 
 
