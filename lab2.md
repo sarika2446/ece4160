@@ -4,8 +4,11 @@
 
 ### Setup
 
+For this lab, using Terminal, I installed the latest releases of Python and pip. I also activated the virtual environment using the command _source FastRobots_ble/bin/activate_ and installed the necessary Python packages using the command _pip install numpy pyyaml colorama nest_asyncio bleak jupyterlab_. Additionally, I started the Jupyter server. I then burned the ble_arduino.ino sketch onto the Artemis, after which the Artemis printed its MAC address to the serial monitor.
+
 ### Codebase
 
+In the project directory I created, I added the unzipped codebase, as well as the _ble_python_ directory. Some important functions included in this codebase are uuid4(), writeValue(value), clear(), append(), c_str(), and handle_command().
 
 ## Lab Tasks
 
