@@ -95,6 +95,6 @@ For this task, I create a case **GET_TEMP_5s_RAPID** in the function **handle_co
 
 ### Limitations
 
-One second of a 16-bit values sent at 150 Hz would take 2400 bits of memory, or 0.3 kB. This means that 384 kB of RAM could store 384/0.3 = 1280 seconds, or 21 minutes and 20 seconds, of 16-bit values at 150 Hz. However, this is assuming there is zero overhead, so in reality, the time is probably far less than this value.
+One second of a 16-bit values sent at 150 Hz would take 2400 bits of memory, or 0.3 kB. This means that 384 kB of RAM could store 384/0.3 = 1280 seconds, or 21 minutes and 20 seconds, of 16-bit values at 150 Hz. However, this is assuming that all of the space on the RAM is available, but in reality, the amount of data that can be stored is probably less than the calculated value.
 
 
