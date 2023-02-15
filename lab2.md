@@ -50,10 +50,8 @@ For this task, I create a case **GET_TIME_MILLIS** in the function **handle_comm
 
 <img width="474" alt="Screen Shot 2023-02-14 at 1 18 51 AM" src="https://user-images.githubusercontent.com/123786420/218655258-d217368c-9cae-40f8-95f6-1dae2eeb5c37.png">
 
-
-<img width="368" alt="Screen Shot 2023-02-11 at 4 45 35 PM" src="https://user-images.githubusercontent.com/123786420/218657220-34a9653e-d59f-44ea-a8c3-b3fe00eec9ca.png">
-
 <img width="365" alt="Screen Shot 2023-02-15 at 2 41 41 AM" src="https://user-images.githubusercontent.com/123786420/218963616-8febdda1-d0be-4212-9b4d-0131cdf6a347.png">
+
 
 
 ### Notification Handler
