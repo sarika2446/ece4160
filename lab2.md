@@ -8,9 +8,15 @@ For this lab, using Terminal, I installed the latest releases of Python and pip.
 
 <img width="493" alt="Screen Shot 2023-02-14 at 1 37 01 AM" src="https://user-images.githubusercontent.com/123786420/218658420-61b187a6-2461-445f-9a06-b281ad76ecea.png">
 
+
+
+
 ### Codebase
 
 In the project directory I created, I added the unzipped codebase, as well as the _ble_python_ directory. Some important functions included in this codebase are **uuid4()**, **writeValue(value)**, **clear()**, **append()**, **c_str()**, and **handle_command()**.
+
+
+
 
 ## Lab Tasks
 
@@ -36,7 +42,7 @@ The Artemis was able to receive the two integers and print them to the serial mo
 
 ### Send Echo Command
 
-For this task, I create a case **ECHO** in the function **handle_commands()** in the ble_arduino.ino file, that when called from the Python end, appends the characters ":)" to the input and sends it as a response. 
+For this task, I create a case **ECHO** in the function **handle_commands()** in the ble_arduino.ino file, which when called from the Python end using the function **send_command**, appends the characters ":)" to the input and sends the augmented string as a response. 
 
 <img width="531" alt="Screen Shot 2023-02-14 at 1 18 26 AM" src="https://user-images.githubusercontent.com/123786420/218655199-6198ac64-b05c-4bc1-a895-d641f76fcd39.png">
 
@@ -46,7 +52,7 @@ For this task, I create a case **ECHO** in the function **handle_commands()** in
 
 ### Get Time Command
 
-For this task, I create a case **GET_TIME_MILLIS** in the function **handle_commands()** in the ble_arduino.ino file, that when called from the Python end, appends sends the time in milliseconds in the form "T:time" in response.
+For this task, I create a case **GET_TIME_MILLIS** in the function **handle_commands()** in the ble_arduino.ino file, which when called from the Python end, appends sends the time in milliseconds, found using the function **millis()**, in the form "T:time" in response.
 
 <img width="474" alt="Screen Shot 2023-02-14 at 1 18 51 AM" src="https://user-images.githubusercontent.com/123786420/218655258-d217368c-9cae-40f8-95f6-1dae2eeb5c37.png">
 
@@ -56,7 +62,7 @@ For this task, I create a case **GET_TIME_MILLIS** in the function **handle_comm
 
 ### Notification Handler
 
-
+I set up a notification handler in Python to receive the string values the Artemis board sends in response to commands from the Python end. I defined a callback function **callback(uuid,byte_array)** that converts the received byte array of a characteristic string with a particular UUID into a string. To extract the time from the string, I sliced it to remove the first two characters. Then, to start notifications, I called the function **start_notify** with the UUID of the characteristic string and the callback function as parameters. Next, I sent the **GET_TIME_MILLIS** command from the Python end to the Artemis, and I was able to print the received string without calling the function **receive_string**, showing that the notification handler worked. Finally, I called the function **stop_notify** to cease notifications. No code was added on the Arduino end.
 
 <img width="425" alt="Screen Shot 2023-02-14 at 1 32 14 AM" src="https://user-images.githubusercontent.com/123786420/218657609-b3f596d8-9b9a-4068-98cd-9e6ba658ca27.png">
 
@@ -64,14 +70,26 @@ For this task, I create a case **GET_TIME_MILLIS** in the function **handle_comm
 
 ### Get Temperature Commands
 
+#### GET_TEMP_5s
+
+For this task, I create a case **GET_TEMP_5s** in the function **handle_commands()** in the ble_arduino.ino file, which when called from the Python end, sends a string with 5 timestamped internal die temperature readings (in Celsius), with the readings being taken once per second for five seconds. This string was created by appending a time reading, found using the function **millis()**, and a temperature reading, found using the function **getTempDegC()**, to the characteristic string five times using a loop, with each loop separated by a 1000 millisecond delay. 
+
 <img width="467" alt="Screen Shot 2023-02-14 at 1 28 05 AM" src="https://user-images.githubusercontent.com/123786420/218656853-76bb3287-8d42-4582-b1ce-3bd01067f671.png">
+
+On the Python end, I added a notification handler the same way as in the section above. I used the same callback function to start notifications, sent the **GET_TEMP_5s** command, printed the string, and stopped notifications.
 
 <img width="725" alt="Screen Shot 2023-02-14 at 1 36 18 AM" src="https://user-images.githubusercontent.com/123786420/218658293-2ea18a39-fd79-4e6c-8d03-f16b76e1054b.png">
 
-<img width="464" alt="Screen Shot 2023-02-14 at 1 28 28 AM" src="https://user-images.githubusercontent.com/123786420/218656905-4c4aa532-02c5-4852-96b2-4fb16e0955e0.png">
 
 
-<img width="683" alt="Screen Shot 2023-02-14 at 1 27 21 AM" src="https://user-images.githubusercontent.com/123786420/218656741-483141eb-cd90-4cb7-b5da-ce35183f8859.png">
+
+#### GET_TEMP_5s_RAPID
+
+For this task, I create a case **GET_TEMP_5s_RAPID** in the function **handle_commands()** in the ble_arduino.ino file, which when called from the Python end, sends 50 timestamped internal die temperature readings (in Celsius), all taken within 5 seconds. The code for this case was the same as the code for GET_TEMP_5s, except that the loop for appending 5 timestamped temperature readings was run 10 times in order to collect 50 readings. The delay between readings was also reduced to 38 millseconds to ensure that all of the readings were taken within 5 seconds.
+
+<img width="471" alt="Screen Shot 2023-02-15 at 2 45 50 AM" src="https://user-images.githubusercontent.com/123786420/218964445-9a3cffc8-f65c-4b79-b09b-883408aa48cc.png">
+
+<img width="704" alt="Screen Shot 2023-02-15 at 2 46 12 AM" src="https://user-images.githubusercontent.com/123786420/218964513-6003741c-06d9-4c90-8d2f-1dec2e6735e8.png">
 
 
 
