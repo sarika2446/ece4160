@@ -8,6 +8,14 @@ The expected I2C address for the TOF sensors was 0x52, according to their datash
 
 
 
+## Lab Tasks
+
+<img width="480" alt="Screen Shot 2023-02-20 at 5 49 12 AM" src="https://user-images.githubusercontent.com/123786420/220084543-8351d81d-b2c2-405b-857e-ca06b3840925.png">
+
+
+
+
+
 <img width="457" alt="Screen Shot 2023-02-20 at 3 01 58 AM" src="https://user-images.githubusercontent.com/123786420/220078894-3f9ed09d-11ad-4087-9095-65d70ed0ad1e.png">
 
 
