@@ -22,8 +22,10 @@ When running Example1_ReadDistance.ino on the Artemis and moving an object as fa
 
 <img width="411" alt="Screen Shot 2023-02-15 at 4 03 18 PM" src="https://user-images.githubusercontent.com/123786420/220087856-1f16d23c-cfff-45eb-ae96-4abe10287bb5.png">
 
+For my accuracy and repeatability measurements, I took 50 points at each distance specified and used them to find the mean and standard deviation. The sensor was very accurate for a distance of 100mm and got less accurate as the distance increased. Its repeatability was high, as the maximum standard deviation was 1.485. The standard deviation increased as the distance measured increased.
 
-For my accuracy and repeatability measurements, I took 50 points at each distance specified and used them to find the mean and standard deviation. The sensor was very accurate for a distance of 100mm and got less accurate as the distance increased. Its repeatability was high, as the maximum standard deviation was 1.485. I also found that the ranging time was 52 ms.
+<img width="357" alt="Screen Shot 2023-02-20 at 4 43 21 AM" src="https://user-images.githubusercontent.com/123786420/220090161-400e57a3-18cc-4e33-bcb4-e39fd02a86f4.png">
+
 
 | Distance  (mm)   | Mean (mm) | Standard Deviation (mm)     |
 |    :----:   |    :----:   |    :----:     |
@@ -33,3 +35,11 @@ For my accuracy and repeatability measurements, I took 50 points at each distanc
 | 400   | 409.6        | 1.485    |
 
 ![Unknown-11](https://user-images.githubusercontent.com/123786420/220063997-f0a23a41-7325-4e3b-93a2-565bab145ac6.png)
+
+I also found that the ranging time was 52 ms, using the code below and averaging the time measured across 10 cycles.
+
+<img width="709" alt="Screen Shot 2023-02-20 at 4 22 26 AM" src="https://user-images.githubusercontent.com/123786420/220089785-941f18be-8606-4d30-b13b-befbd5faa10a.png">
+
+I then hooked up the other sensor as well to the QWIIC breakout board and modified Example1_ReadDistanceino, as shown below.
+
+<script src="https://gist.github.com/sarika2446/2e41803aea5f82874d3e68efd52095c6.js"></script>
