@@ -18,16 +18,16 @@ I first connected one TOF sensor and the IMU to the Artemis. The TOF sensor addr
 
 <img width="457" alt="Screen Shot 2023-02-20 at 3 01 58 AM" src="https://user-images.githubusercontent.com/123786420/220078894-3f9ed09d-11ad-4087-9095-65d70ed0ad1e.png">
 
-The TOF sensor has two modes, .setDistanceModeShort(), which has a shorter range of 1.3m and .setDistanceModeLong() which has a longer range of 4m. I chose to use .setDistanceModeShort() because the short range mode is less affected by ambient light than the long range mode, allowing for more accuracy in making quick decisions. For now, a range of 1.3m seems sufficient. 
+The TOF sensor has two modes, setDistanceModeShort(), which has a shorter range of 1.3m and setDistanceModeLong() which has a longer range of 4m. I chose to use .setDistanceModeShort() because the short range mode is less affected by ambient light than the long range mode, allowing for more accuracy in making quick decisions. For now, a range of 1.3m seems sufficient. 
 
-When running Example1_ReadDistance.ino on the Artemis and moving an object as far away from the sensor as I could, I was able to determine that the maximum range of the TOF sensor was 2269 mm, which was higher than the expected range for the short range mode.
+I first hooked up one sensor and ran Example1_ReadDistance.ino on the Artemis, and was able to successfully receive an output.
 
 <img width="411" alt="Screen Shot 2023-02-15 at 4 03 18 PM" src="https://user-images.githubusercontent.com/123786420/220087856-1f16d23c-cfff-45eb-ae96-4abe10287bb5.png">
 
+By moving an object as far away from the sensor as I could, I was able to determine that the maximum range of the TOF sensor was 2269 mm, which was higher than the expected range for the short range mode.
+
 For my accuracy and repeatability measurements, I took 50 points at each distance specified and used them to find the mean and standard deviation. The sensor was very accurate for a distance of 100mm and got less accurate as the distance increased. Its repeatability was high, as the maximum standard deviation was 1.485. The standard deviation increased as the distance measured increased.
 
-
-<img width="356" alt="Screen Shot 2023-02-20 at 6 33 29 AM" src="https://user-images.githubusercontent.com/123786420/220095514-a0c1dd4d-0c25-4884-8caf-c4ece59c432e.png">
 
 
 | Distance  (mm)   | Mean (mm) | Standard Deviation (mm)     |
@@ -43,12 +43,12 @@ I also found that the ranging time was 52 ms, using the code below and averaging
 
 <img width="709" alt="Screen Shot 2023-02-20 at 4 22 26 AM" src="https://user-images.githubusercontent.com/123786420/220089785-941f18be-8606-4d30-b13b-befbd5faa10a.png">
 
-I then hooked up the other sensor as well to the QWIIC breakout board and modified Example1_ReadDistanceino, as shown below.
+I then hooked up the other sensor as well to the QWIIC breakout board and modified Example1_ReadDistance.ino, as shown below.
 
 <img width="745" alt="Screen Shot 2023-02-20 at 6 18 11 AM" src="https://user-images.githubusercontent.com/123786420/220091148-852a3064-17fd-4633-80e7-a25f2200f0a7.png">
 <img width="709" alt="Screen Shot 2023-02-20 at 6 20 48 AM" src="https://user-images.githubusercontent.com/123786420/220091664-e6564c60-963a-4283-9e5e-0b842d19cee6.png">
 
-Both sensors were able to output data parallely as Distance 1 and Distance 2.
+Both sensors were able to output data parallelly as Distance 1 and Distance 2.
 
 <img width="423" alt="Screen Shot 2023-02-20 at 6 35 43 AM" src="https://user-images.githubusercontent.com/123786420/220095557-d37aad93-c682-47b4-9992-b6629c2b833a.png">
 
