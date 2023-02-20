@@ -25,7 +25,7 @@ I first hooked up one sensor and ran Example1_ReadDistance.ino on the Artemis, a
 <img width="357" alt="Screen Shot 2023-02-20 at 6 48 54 AM" src="https://user-images.githubusercontent.com/123786420/220098284-3caf35c7-c558-4d63-af95-103e0f920fd3.png">
 
 
-By moving an object as far away from the sensor as I could, I was able to determine that the maximum range of the TOF sensor was 2269 mm, which was higher than the expected range for the short range mode.
+By moving an object as far away from the sensor as I could, I was able to measure a maximum range of the TOF sensor was 2269 mm, which was higher than the expected range for the short range mode.
 
 <img width="411" alt="Screen Shot 2023-02-15 at 4 03 18 PM" src="https://user-images.githubusercontent.com/123786420/220087856-1f16d23c-cfff-45eb-ae96-4abe10287bb5.png">
 
