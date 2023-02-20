@@ -12,14 +12,18 @@ The expected I2C address for the TOF sensors was 0x52, according to their datash
 
 <img width="480" alt="Screen Shot 2023-02-20 at 5 49 12 AM" src="https://user-images.githubusercontent.com/123786420/220084543-8351d81d-b2c2-405b-857e-ca06b3840925.png">
 
-
-
-
+I first connected one TOF sensor and the IMU to the Artemis. The TOF sensor address outputted when running Example1_wire_I2C.ino was 0x29, not 0x52 as expected. However, this makes sense because the number 0x29 consists of the read/write bit as the most significant bit followed by the address bits, and 0x52 shifted right by one position equals 0x29.
 
 <img width="457" alt="Screen Shot 2023-02-20 at 3 01 58 AM" src="https://user-images.githubusercontent.com/123786420/220078894-3f9ed09d-11ad-4087-9095-65d70ed0ad1e.png">
 
+The TOF sensor has two modes, .setDistanceModeShort(), which has a shorter range of 1.3m and .setDistanceModeLong() which has a longer range of 4m. I chose to use .setDistanceModeShort() because the short range mode is less affected by ambient light than the long range mode, allowing for more accuracy in making quick decisions. For now, a range of 1.3m seems sufficient. 
+
+When running Example1_ReadDistance.ino on the Artemis and moving an object as far away from the sensor as I could, I was able to determine that the maximum range of the TOF sensor was 2269 mm, which was higher than the expected range for the short range mode.
+
+<img width="411" alt="Screen Shot 2023-02-15 at 4 03 18 PM" src="https://user-images.githubusercontent.com/123786420/220087856-1f16d23c-cfff-45eb-ae96-4abe10287bb5.png">
 
 
+For my accuracy and repeatability measurements, I took 50 points at each distance specified and used them to find the mean and standard deviation. The sensor was very accurate for a distance of 100mm and got less accurate as the distance increased. Its repeatability was high, as the maximum standard deviation was 1.485. I also found that the ranging time was 52 ms.
 
 | Distance  (mm)   | Mean (mm) | Standard Deviation (mm)     |
 |    :----:   |    :----:   |    :----:     |
