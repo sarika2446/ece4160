@@ -45,5 +45,20 @@ I then hooked up the other sensor as well to the QWIIC breakout board and modifi
 <img width="745" alt="Screen Shot 2023-02-20 at 6 18 11 AM" src="https://user-images.githubusercontent.com/123786420/220091148-852a3064-17fd-4633-80e7-a25f2200f0a7.png">
 <img width="709" alt="Screen Shot 2023-02-20 at 6 20 48 AM" src="https://user-images.githubusercontent.com/123786420/220091664-e6564c60-963a-4283-9e5e-0b842d19cee6.png">
 
+Both sensors were able to output data parallely as Distance 1 and Distance 2.
+
+<img width="425" alt="Screen Shot 2023-02-20 at 4 50 00 AM" src="https://user-images.githubusercontent.com/123786420/220092335-4ca172b7-651a-449e-aea1-e521df3e5086.png">
+
+I found the speed of the loop to be 91 ms by printing out the timestamp, by calling millis() as seen in the code above, at the beginning of each loop and averaging the time between timestamps across 10 loops. The current limiting factor is the time it takes to print all of the data to the serial monitor.
+
+I then sent data collected over 5000 ms to the Python end via Bluetooth. I created a command in ble_arduino.ino called GET_TOF for this purpose.
+
+<img width="960" alt="Screen Shot 2023-02-15 at 5 16 20 PM" src="https://user-images.githubusercontent.com/123786420/220094254-4b71543e-562c-4781-aa57-54c73de982bb.png">
+
+The data received is plotted below. The lines are nearly flat because the sensors were not being moved around while the data was collected.
+
+
+![Unknown-12](https://user-images.githubusercontent.com/123786420/220094427-716347a4-ec52-4dd7-91c1-7f209098852c.png)
+
 
 
