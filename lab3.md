@@ -42,4 +42,7 @@ I also found that the ranging time was 52 ms, using the code below and averaging
 
 I then hooked up the other sensor as well to the QWIIC breakout board and modified Example1_ReadDistanceino, as shown below.
 
-<script src="https://gist.github.com/sarika2446/2e41803aea5f82874d3e68efd52095c6.js"></script>
+<img width="745" alt="Screen Shot 2023-02-20 at 6 18 11 AM" src="https://user-images.githubusercontent.com/123786420/220091148-852a3064-17fd-4633-80e7-a25f2200f0a7.png">
+<img width="726" alt="Screen Shot 2023-02-20 at 6 18 26 AM" src="https://user-images.githubusercontent.com/123786420/220091157-0ab6d436-62d7-44d0-a53d-4fccb8f744b4.png">
+
+
