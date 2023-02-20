@@ -18,7 +18,7 @@ I first connected one TOF sensor and the IMU to the Artemis. The TOF sensor addr
 
 <img width="457" alt="Screen Shot 2023-02-20 at 3 01 58 AM" src="https://user-images.githubusercontent.com/123786420/220078894-3f9ed09d-11ad-4087-9095-65d70ed0ad1e.png">
 
-The TOF sensor has two modes, setDistanceModeShort(), which has a shorter range of 1.3m and setDistanceModeLong() which has a longer range of 4m. I chose to use .setDistanceModeShort() because the short range mode is less affected by ambient light than the long range mode, allowing for more accuracy in making quick decisions. For now, a range of 1.3m seems sufficient. 
+The TOF sensor has two modes, setDistanceModeShort(), which has a shorter range of 1.3m and setDistanceModeLong() which has a longer range of 4m. I chose to use setDistanceModeShort() because the short range mode is less affected by ambient light than the long range mode, allowing for more accuracy in making quick decisions. For now, a range of 1.3m seems sufficient. 
 
 I first hooked up one sensor and ran Example1_ReadDistance.ino on the Artemis, and was able to successfully receive an output.
 
@@ -60,7 +60,7 @@ I found the speed of the loop to be 91 ms by printing out the timestamp, by call
 
 I then sent data collected over 5000 ms to the Python end via Bluetooth. I created a command in ble_arduino.ino called GET_TOF for this purpose.
 
-<img width="597" alt="Screen Shot 2023-02-20 at 6 44 16 AM" src="https://user-images.githubusercontent.com/123786420/220097392-45bb2f70-7c82-4b8e-8ecb-83f7ab8175cf.png">
+<img width="600" alt="Screen Shot 2023-02-20 at 6 46 44 AM" src="https://user-images.githubusercontent.com/123786420/220097895-cf13c303-ebb4-4d59-9630-7a6d11ad42b2.png">
 
 
 The data received is plotted below. The lines are nearly flat because the sensors were not being moved around while the data was collected.
