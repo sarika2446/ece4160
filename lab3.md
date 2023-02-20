@@ -1,3 +1,18 @@
+# Lab 3: Time of Flight Sensors
+
+## Prelab
+
+The expected I2C address for the TOF sensors was 0x52, according to their datasheet. Two sensors will be used, only one of which will have its XSHUT pin soldered to the Artemis because only one sensor needs to be shut down while the other one gets its address changed. This would be more efficient than utilizing the XSHUT pins of both sensors. In order to cover the widest possible area of the robot's motion, I would place one sensor on the front of the robot and one on its side. However, blindspots would still exist due to the angular sensitivity and limited range of the robot, which could impact situations such as performing turns. 
+
+![IMG_1A08D919E607-1](https://user-images.githubusercontent.com/123786420/220083641-6caa02ab-a458-4b0c-a5d5-2ef6ef6f6eb2.jpeg)
+
+
+
+<img width="457" alt="Screen Shot 2023-02-20 at 3 01 58 AM" src="https://user-images.githubusercontent.com/123786420/220078894-3f9ed09d-11ad-4087-9095-65d70ed0ad1e.png">
+
+
+
+
 | Distance  (mm)   | Mean (mm) | Standard Deviation (mm)     |
 |    :----:   |    :----:   |    :----:     |
 | 100      | 101.9      | 0.9434  |
