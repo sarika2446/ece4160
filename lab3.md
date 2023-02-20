@@ -22,9 +22,12 @@ The TOF sensor has two modes, setDistanceModeShort(), which has a shorter range 
 
 I first hooked up one sensor and ran Example1_ReadDistance.ino on the Artemis, and was able to successfully receive an output.
 
-<img width="411" alt="Screen Shot 2023-02-15 at 4 03 18 PM" src="https://user-images.githubusercontent.com/123786420/220087856-1f16d23c-cfff-45eb-ae96-4abe10287bb5.png">
+<img width="423" alt="Screen Shot 2023-02-20 at 6 35 43 AM" src="https://user-images.githubusercontent.com/123786420/220097097-10126fa8-9e5d-4ad5-985c-dd436804c87a.png">
+
 
 By moving an object as far away from the sensor as I could, I was able to determine that the maximum range of the TOF sensor was 2269 mm, which was higher than the expected range for the short range mode.
+
+<img width="411" alt="Screen Shot 2023-02-15 at 4 03 18 PM" src="https://user-images.githubusercontent.com/123786420/220087856-1f16d23c-cfff-45eb-ae96-4abe10287bb5.png">
 
 For my accuracy and repeatability measurements, I took 50 points at each distance specified and used them to find the mean and standard deviation. The sensor was very accurate for a distance of 100mm and got less accurate as the distance increased. Its repeatability was high, as the maximum standard deviation was 1.485. The standard deviation increased as the distance measured increased.
 
