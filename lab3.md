@@ -63,7 +63,7 @@ I then sent data collected over 5000 ms to the Python end via Bluetooth. I creat
 <img width="600" alt="Screen Shot 2023-02-20 at 6 46 44 AM" src="https://user-images.githubusercontent.com/123786420/220097895-cf13c303-ebb4-4d59-9630-7a6d11ad42b2.png">
 
 
-The data received is plotted below. The lines are nearly flat because the sensors were not being moved around while the data was collected.
+The data received is plotted below. The lines are nearly flat because the sensors were not being moved around while the data was being collected.
 
 
 ![Unknown-12](https://user-images.githubusercontent.com/123786420/220094427-716347a4-ec52-4dd7-91c1-7f209098852c.png)
