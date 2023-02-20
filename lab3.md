@@ -2,7 +2,9 @@
 
 ## Prelab
 
-The expected I2C address for the TOF sensors was 0x52, according to their datasheet. Two sensors will be used, only one of which will have its XSHUT pin soldered to the Artemis because only one sensor needs to be shut down while the other one gets its address changed. This would be more efficient than utilizing the XSHUT pins of both sensors. Two sensors were used in order for the robot to be able to sense objects in more than one direction, allowing for better maneuvering. In order to cover the widest possible area of the robot's motion, I would place one sensor on the front of the robot and one on its side. However, blindspots would still exist due to the angular sensitivity and limited range of the robot, which could impact situations such as performing turns. 
+The expected I2C address for the TOF sensors was 0x52, according to their datasheet. Two sensors will be used, only one of which will have its XSHUT pin soldered to the Artemis because only one sensor needs to be shut down while the other one gets its address changed. This would be more efficient than utilizing the XSHUT pins of both sensors. 
+
+Two sensors were used in order for the robot to be able to sense objects in more than one direction, allowing for better mspping of its path. In order to cover the widest possible area of the robot's motion, I would place one sensor on the front of the robot and one on its side. However, blindspots would still exist due to the angular sensitivity and limited range of the robot, which could impact situations such as performing turns. 
 
 <img width="527" alt="Screen Shot 2023-02-20 at 5 46 57 AM" src="https://user-images.githubusercontent.com/123786420/220084082-89c02ecd-e573-4c02-9052-cbf26cb21901.png">
 
