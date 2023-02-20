@@ -2,7 +2,7 @@
 
 ## Prelab
 
-The expected I2C address for the TOF sensors was 0x52, according to their datasheet. Two sensors will be used, only one of which will have its XSHUT pin soldered to the Artemis because only one sensor needs to be shut down while the other one gets its address changed. This would be more efficient than utilizing the XSHUT pins of both sensors. In order to cover the widest possible area of the robot's motion, I would place one sensor on the front of the robot and one on its side. However, blindspots would still exist due to the angular sensitivity and limited range of the robot, which could impact situations such as performing turns. 
+The expected I2C address for the TOF sensors was 0x52, according to their datasheet. Two sensors will be used, only one of which will have its XSHUT pin soldered to the Artemis because only one sensor needs to be shut down while the other one gets its address changed. This would be more efficient than utilizing the XSHUT pins of both sensors. Two sensors were used in order for the robot to be able to sense objects in more than one direction, allowing for better maneuvering. In order to cover the widest possible area of the robot's motion, I would place one sensor on the front of the robot and one on its side. However, blindspots would still exist due to the angular sensitivity and limited range of the robot, which could impact situations such as performing turns. 
 
 <img width="527" alt="Screen Shot 2023-02-20 at 5 46 57 AM" src="https://user-images.githubusercontent.com/123786420/220084082-89c02ecd-e573-4c02-9052-cbf26cb21901.png">
 
@@ -24,7 +24,8 @@ When running Example1_ReadDistance.ino on the Artemis and moving an object as fa
 
 For my accuracy and repeatability measurements, I took 50 points at each distance specified and used them to find the mean and standard deviation. The sensor was very accurate for a distance of 100mm and got less accurate as the distance increased. Its repeatability was high, as the maximum standard deviation was 1.485. The standard deviation increased as the distance measured increased.
 
-<img width="357" alt="Screen Shot 2023-02-20 at 4 43 21 AM" src="https://user-images.githubusercontent.com/123786420/220090161-400e57a3-18cc-4e33-bcb4-e39fd02a86f4.png">
+
+<img width="356" alt="Screen Shot 2023-02-20 at 6 33 29 AM" src="https://user-images.githubusercontent.com/123786420/220095514-a0c1dd4d-0c25-4884-8caf-c4ece59c432e.png">
 
 
 | Distance  (mm)   | Mean (mm) | Standard Deviation (mm)     |
@@ -47,7 +48,8 @@ I then hooked up the other sensor as well to the QWIIC breakout board and modifi
 
 Both sensors were able to output data parallely as Distance 1 and Distance 2.
 
-<img width="425" alt="Screen Shot 2023-02-20 at 4 50 00 AM" src="https://user-images.githubusercontent.com/123786420/220092335-4ca172b7-651a-449e-aea1-e521df3e5086.png">
+<img width="423" alt="Screen Shot 2023-02-20 at 6 35 43 AM" src="https://user-images.githubusercontent.com/123786420/220095557-d37aad93-c682-47b4-9992-b6629c2b833a.png">
+
 
 I found the speed of the loop to be 91 ms by printing out the timestamp, by calling millis() as seen in the code and serial monitor output above, at the beginning of each loop and averaging the time between timestamps across 10 loops. The current limiting factor is the time it takes to print all of the data to the serial monitor.
 
