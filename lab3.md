@@ -49,7 +49,7 @@ Both sensors were able to output data parallely as Distance 1 and Distance 2.
 
 <img width="425" alt="Screen Shot 2023-02-20 at 4 50 00 AM" src="https://user-images.githubusercontent.com/123786420/220092335-4ca172b7-651a-449e-aea1-e521df3e5086.png">
 
-I found the speed of the loop to be 91 ms by printing out the timestamp, by calling millis() as seen in the code above, at the beginning of each loop and averaging the time between timestamps across 10 loops. The current limiting factor is the time it takes to print all of the data to the serial monitor.
+I found the speed of the loop to be 91 ms by printing out the timestamp, by calling millis() as seen in the code and serial monitor output above, at the beginning of each loop and averaging the time between timestamps across 10 loops. The current limiting factor is the time it takes to print all of the data to the serial monitor.
 
 I then sent data collected over 5000 ms to the Python end via Bluetooth. I created a command in ble_arduino.ino called GET_TOF for this purpose.
 
