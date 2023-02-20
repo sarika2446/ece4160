@@ -44,12 +44,12 @@ For my accuracy and repeatability measurements, I took 50 points at each distanc
 
 I also found that the ranging time was 52 ms, using the code below and averaging the time measured across 10 cycles.
 
-<img width="709" alt="Screen Shot 2023-02-20 at 4 22 26 AM" src="https://user-images.githubusercontent.com/123786420/220089785-941f18be-8606-4d30-b13b-befbd5faa10a.png">
+<img width="600" alt="Screen Shot 2023-02-20 at 4 22 26 AM" src="https://user-images.githubusercontent.com/123786420/220089785-941f18be-8606-4d30-b13b-befbd5faa10a.png">
 
 I then hooked up the other sensor as well to the QWIIC breakout board and modified Example1_ReadDistance.ino, as shown below.
 
-<img width="745" alt="Screen Shot 2023-02-20 at 6 18 11 AM" src="https://user-images.githubusercontent.com/123786420/220091148-852a3064-17fd-4633-80e7-a25f2200f0a7.png">
-<img width="709" alt="Screen Shot 2023-02-20 at 6 20 48 AM" src="https://user-images.githubusercontent.com/123786420/220091664-e6564c60-963a-4283-9e5e-0b842d19cee6.png">
+<img width="600" alt="Screen Shot 2023-02-20 at 6 18 11 AM" src="https://user-images.githubusercontent.com/123786420/220091148-852a3064-17fd-4633-80e7-a25f2200f0a7.png">
+<img width="600" alt="Screen Shot 2023-02-20 at 6 20 48 AM" src="https://user-images.githubusercontent.com/123786420/220091664-e6564c60-963a-4283-9e5e-0b842d19cee6.png">
 
 Both sensors were able to output data parallelly as Distance 1 and Distance 2.
 
@@ -60,7 +60,8 @@ I found the speed of the loop to be 91 ms by printing out the timestamp, by call
 
 I then sent data collected over 5000 ms to the Python end via Bluetooth. I created a command in ble_arduino.ino called GET_TOF for this purpose.
 
-<img width="960" alt="Screen Shot 2023-02-15 at 5 16 20 PM" src="https://user-images.githubusercontent.com/123786420/220094254-4b71543e-562c-4781-aa57-54c73de982bb.png">
+<img width="597" alt="Screen Shot 2023-02-20 at 6 44 16 AM" src="https://user-images.githubusercontent.com/123786420/220097392-45bb2f70-7c82-4b8e-8ecb-83f7ab8175cf.png">
+
 
 The data received is plotted below. The lines are nearly flat because the sensors were not being moved around while the data was collected.
 
