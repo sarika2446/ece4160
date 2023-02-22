@@ -126,6 +126,6 @@ Once I got a feel for the car, I mounted the Artemis, along with the battery and
 
 ![Unknown-19](https://user-images.githubusercontent.com/123786420/220590125-5b5875f1-0d49-46ef-9dc0-8c9f20a6cdc7.png)
 
-In this plot, blue represents one TOF sensor, green represents the other TOF sensor, red represents pitch, and black represents roll. The results were as expected. I plotted this data in two different plots because the optimal y-axis scaling to see the trends clearly was very different for the TOF sensor versus the IMU.
+In this plot, blue represents one TOF sensor, green represents the other TOF sensor, red represents pitch, and black represents roll. The results were as expected, although there was some unintended movement of the sensors due to the tape used to mount them being flimsy. I plotted this data in two different plots because the optimal y-axis scaling to see the trends clearly was very different for the TOF sensor versus the IMU.
 
 
