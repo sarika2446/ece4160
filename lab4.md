@@ -1,4 +1,4 @@
-#Lab 4: IMU
+# Lab 4: IMU
 
 ## Set up the IMU
 
