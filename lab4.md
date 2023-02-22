@@ -71,7 +71,7 @@ I then implemented complementary filters, with α = 0.5, for both the pitch and 
 
 The accuracy and working range are demonstrated in the video below. The accuracy seems to be higher than the accelerometer measurements alone and much higher than the gyroscope measurements alone.
 
-
+[![Filter](https://img.youtube.com/vi/hazu8Rz-Gck/0.jpg)](https://www.youtube.com/watch?v=hazu8Rz-Gck "Filter")
 
 
 
