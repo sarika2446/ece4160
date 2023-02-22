@@ -4,7 +4,7 @@
 
 The IMU was wired to the Artemis with the QWIIC connector cable, according to the diagram below.
 
-![IMG_1A08D919E607-1](https://user-images.githubusercontent.com/123786420/220541115-94a46004-95a7-4f70-8628-2af8e0baa2a1.jpeg)
+<img width="527" alt="Screen Shot 2023-02-20 at 5 46 57 AM" src="https://user-images.githubusercontent.com/123786420/220084082-89c02ecd-e573-4c02-9052-cbf26cb21901.png">
 
 I then ran the example program Example1_Basics, which came with the ICM 20948 library, on the Artemis successfully.
 
