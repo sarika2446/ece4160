@@ -92,6 +92,25 @@ I was also able to collect and store timestamped IMU data in arrays of size 500 
 
 <img width="345" alt="Screen Shot 2023-02-21 at 7 30 10 PM" src="https://user-images.githubusercontent.com/123786420/220560496-bfbafc72-a193-45e5-9608-d18c0722f02b.png">
 
+By integrating my IMU code into the existing code to transmit 5 seconds of TOF data via Bluetooth from the Artemis to the Python end, and creating a new command called GET_TOF_IMU, I was able to transmit 5 seconds of both TOF and IMU data.
+
+<script src="https://gist.github.com/sarika2446/8bfcf60db0d8f817fe32505702322fd0.js"></script>
+
+On the Python end, I received the data using a notification handler.
+
+
+<img width="600" alt="Screen Shot 2023-02-22 at 3 20 05 AM" src="https://user-images.githubusercontent.com/123786420/220562798-af663f25-5d56-4f43-ab60-161f7913f6bb.png">
+
+<img width="620" alt="Screen Shot 2023-02-22 at 3 18 23 AM" src="https://user-images.githubusercontent.com/123786420/220562839-650efa32-b05b-4b4f-9a8a-5fc49885d06a.png">
+
+<img width="598" alt="Screen Shot 2023-02-22 at 3 19 50 AM" src="https://user-images.githubusercontent.com/123786420/220562860-f9ed61bd-a846-4667-b3ce-f2becfb87737.png">
+
+## Cut the Coord
+
+The digital electronics were powered by a 3.7V 650mAh battery, while the motors were powered by a 3.7V 850mAh battery. The battery with more capacity is used to drive the motors so the motors can run faster.
+
+![IMG_1070](https://user-images.githubusercontent.com/123786420/220564363-bd912931-7417-40b3-aa59-e7d95f6e04f1.jpg)
+
 
 
 
