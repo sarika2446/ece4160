@@ -38,7 +38,6 @@ I then tapped the IMU to generate noise, recorded the pitch and roll data, and p
 <p float="middle">
   <img src="/[img1.png](https://user-images.githubusercontent.com/123786420/220551371-8e603e1a-3005-499b-b816-4769fabcd6af.png)" width="375" />
   <img src="/[img2.png](https://user-images.githubusercontent.com/123786420/220550643-e0949a01-2d97-4f32-8deb-d68e73143063.png)" width="375" /> 
-  <img src="/img3.png" width="100" />
 </p>
 
 ![Unknown-15](https://user-images.githubusercontent.com/123786420/220551371-8e603e1a-3005-499b-b816-4769fabcd6af.png)
