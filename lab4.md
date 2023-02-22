@@ -29,7 +29,7 @@ The accelerometer's pitch and roll were calculated using the equations below, ta
 
 I plotted the output at {-90,0,90} degrees using the Serial Plotter, where pink is pitch and gray is roll.
 
-<img width="1375" alt="Screen Shot 2023-02-21 at 1 56 58 PM" src="https://user-images.githubusercontent.com/123786420/220547584-f35f4d6c-0297-4dce-b9f3-363143d6ed35.png">
+<img width="600" alt="Screen Shot 2023-02-21 at 1 56 58 PM" src="https://user-images.githubusercontent.com/123786420/220547584-f35f4d6c-0297-4dce-b9f3-363143d6ed35.png">
 
 I found, using a protractor, that the output was off by about 5 degrees from the measured value, on average, which is pretty accurate.
 
