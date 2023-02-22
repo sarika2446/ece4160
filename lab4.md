@@ -18,6 +18,8 @@ I also added code that would make the Artemis blink its built-in LED three times
 
 <script src="https://gist.github.com/sarika2446/4c0a2638bd72bb3f08b7cf59a75a8567.js"></script>
 
+
+
 ## Accelerometer
 
 The accelerometer's pitch and roll were calculated using the equations below, taken from the lecture slides, where θ is roll and ϕ is pitch. I converted these values to degrees in my code.
@@ -25,9 +27,6 @@ The accelerometer's pitch and roll were calculated using the equations below, ta
 <img width="237" alt="Screen Shot 2023-02-22 at 2 03 41 AM" src="https://user-images.githubusercontent.com/123786420/220547342-bb5f7988-d98e-4e67-8aee-ef1b05add992.png">
 
 <script src="https://gist.github.com/sarika2446/972fa6949348000c2f274847d52a26d9.js"></script>
-
-<img width="345" alt="Screen Shot 2023-02-21 at 7 30 10 PM" src="https://user-images.githubusercontent.com/123786420/220548512-c188cf15-0a9c-4106-918d-36d1d1625892.png">
-
 
 I plotted the output at {-90,0,90} degrees using the Serial Plotter, where pink is pitch and gray is roll.
 
@@ -47,6 +46,8 @@ I then tapped the IMU to generate noise, recorded the pitch and roll data, and p
 
 There do not seem to be any spikes in the FFT outputs due to the noise from tapping on the IMU. This is because the IMU already has an internal low-pass filter that filters out noise. There does not seem to be a need to implement an addition low-pass filter.
 
+
+
 ## Gyroscope
 
 Using the equations given in class, I created functions to calculate the pitch, roll, and yaw, as seen below.
@@ -65,13 +66,31 @@ When looking at these plots, it is clear that these measurements are susceptible
 
 <img width="600" alt="lowersamplingrate" src="https://user-images.githubusercontent.com/123786420/220555273-f4c35ebb-a990-4bcd-bd0d-03fbfbae3005.png">
 
-I then implemented complementary filters, with α = 0.5, for both the pitch and the roll, combining the gyroscope and accelerometer measurements as shown below.
+I then implemented complementary filters, with α = 0.5, for both the pitch and the roll, combining the gyroscope and accelerometer measurements as shown below. I chose an α of 0.5 after testing different values to see the accuracy they provided.
 
 <script src="https://gist.github.com/sarika2446/a27ece4b262f1ad0f054340b966c5a77.js"></script>
 
 The accuracy and working range are demonstrated in the video below. The accuracy seems to be higher than the accelerometer measurements alone and much higher than the gyroscope measurements alone.
 
 [![Filter](https://img.youtube.com/vi/hazu8Rz-Gck/0.jpg)](https://www.youtube.com/watch?v=hazu8Rz-Gck "Filter")
+
+They were also not very susceptible to drift and quick vibrations, shown by the first and second image below, respectively.
+
+<img width="600" alt="nodrift" src="https://user-images.githubusercontent.com/123786420/220559073-dfd87ab1-b6f1-4e7e-85d2-0784be7b88b0.png">
+
+<img width="600" alt="Screen Shot 2023-02-21 at 6 38 10 PM" src="https://user-images.githubusercontent.com/123786420/220559250-01160945-3157-499e-b6ed-6f501dc5cdd4.png">
+
+
+
+## Sample Data
+
+After removing extra delays and Serial.print statements, and checking if the data is ready rather than waiting for it to be ready, I was able to sample new data every 133 ms.
+
+I was also able to collect and store timestamped IMU data in arrays of size 500 using the code below.
+
+<script src="https://gist.github.com/sarika2446/dfec36c15124502d10d7f4943ecc9701.js"></script>
+
+<img width="345" alt="Screen Shot 2023-02-21 at 7 30 10 PM" src="https://user-images.githubusercontent.com/123786420/220560496-bfbafc72-a193-45e5-9608-d18c0722f02b.png">
 
 
 
