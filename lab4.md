@@ -111,6 +111,11 @@ The digital electronics were powered by a 3.7V 650mAh battery, while the motors 
 
 <img width="427" alt="Screen Shot 2023-02-22 at 3 28 26 AM" src="https://user-images.githubusercontent.com/123786420/220564505-b5f32c6f-c518-4f0b-9a17-dd29917c2661.png">
 
+## Record a Stunt!
+
+When playing around with the car, before mounting the Artemis onto it, I noticed that the car moved at a high speed, accelerated quickly, and made fairly sharp turns.
+
+[![Car](https://img.youtube.com/vi/keNKlf3qw3o/0.jpg)](https://www.youtube.com/watch?v=keNKlf3qw3o "Car")
 
 
 
