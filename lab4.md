@@ -33,3 +33,21 @@ I plotted the output at {-90,0,90} degrees using the Serial Plotter, where pink 
 
 I found, using a protractor, that the output was off by about 5 degrees from the measured value, on average, which is pretty accurate.
 
+I then tapped the IMU to generate noise, recorded the pitch and roll data, and performed an FFT on them using Python.
+
+<p float="middle">
+  <img src="/[img1.png](https://user-images.githubusercontent.com/123786420/220551371-8e603e1a-3005-499b-b816-4769fabcd6af.png)" width="375" />
+  <img src="/[img2.png](https://user-images.githubusercontent.com/123786420/220550643-e0949a01-2d97-4f32-8deb-d68e73143063.png)" width="375" /> 
+  <img src="/img3.png" width="100" />
+</p>
+
+![Unknown-15](https://user-images.githubusercontent.com/123786420/220551371-8e603e1a-3005-499b-b816-4769fabcd6af.png)
+
+![Unknown-13](https://user-images.githubusercontent.com/123786420/220550643-e0949a01-2d97-4f32-8deb-d68e73143063.png)
+
+![Unknown-16](https://user-images.githubusercontent.com/123786420/220551609-ce3889ed-2bc4-4a52-a1c3-3a7faba03f6c.png)
+
+![Unknown-14](https://user-images.githubusercontent.com/123786420/220550686-8e2187ac-b432-4544-9878-c7cb40e11a1c.png)
+
+
+
