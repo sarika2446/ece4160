@@ -117,8 +117,12 @@ When playing around with the car, before mounting the Artemis onto it, I noticed
 
 [![Car](https://img.youtube.com/vi/keNKlf3qw3o/0.jpg)](https://www.youtube.com/watch?v=keNKlf3qw3o "Car")
 
+Once I got a feel for the car, I mounted the Artemis, along with the battery and sensors, onto it and performed a stunt. Five seconds of the data collected during the stunt was transmitted via Bluetooth and plotted using Python, as seen below.
 
+[![Car](https://img.youtube.com/vi/BR_-p47UlsY/0.jpg)](https://www.youtube.com/watch?v=BR_-p47UlsY "Car")
 
+![Unknown-17](https://user-images.githubusercontent.com/123786420/220586175-ce1e1662-a3e6-4e35-b7c7-2fbff7b81504.png)
 
+In this plot, blue represents one TOF sensor, green represents the other TOF sensor, red represents pitch, and black represents roll.
 
 
