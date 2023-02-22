@@ -109,7 +109,8 @@ On the Python end, I received the data using a notification handler.
 
 The digital electronics were powered by a 3.7V 650mAh battery, while the motors were powered by a 3.7V 850mAh battery. The battery with more capacity is used to drive the motors so the motors can run faster.
 
-![IMG_1070](https://user-images.githubusercontent.com/123786420/220564363-bd912931-7417-40b3-aa59-e7d95f6e04f1.jpg)
+<img width="427" alt="Screen Shot 2023-02-22 at 3 28 26 AM" src="https://user-images.githubusercontent.com/123786420/220564505-b5f32c6f-c518-4f0b-9a17-dd29917c2661.png">
+
 
 
 
