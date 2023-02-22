@@ -118,12 +118,14 @@ When playing around with the car, before mounting the Artemis onto it, I noticed
 
 [![Car](https://img.youtube.com/vi/keNKlf3qw3o/0.jpg)](https://www.youtube.com/watch?v=keNKlf3qw3o "Car")
 
-Once I got a feel for the car, I mounted the Artemis, along with the battery and sensors, onto it and performed a stunt. Five seconds of the data collected during the stunt was transmitted via Bluetooth and plotted using Python, as seen below.
+Once I got a feel for the car, I mounted the Artemis, along with the battery and sensors, onto it and performed a stunt. Five seconds of the data collected during the stunt were transmitted via Bluetooth and plotted using Python, as seen below.
 
 [![Car](https://img.youtube.com/vi/BR_-p47UlsY/0.jpg)](https://www.youtube.com/watch?v=BR_-p47UlsY "Car")
 
-![Unknown-17](https://user-images.githubusercontent.com/123786420/220586175-ce1e1662-a3e6-4e35-b7c7-2fbff7b81504.png)
+![Unknown-20](https://user-images.githubusercontent.com/123786420/220590146-2640e519-5448-4f90-ac20-c3e1ec811244.png)
 
-In this plot, blue represents one TOF sensor, green represents the other TOF sensor, red represents pitch, and black represents roll.
+![Unknown-19](https://user-images.githubusercontent.com/123786420/220590125-5b5875f1-0d49-46ef-9dc0-8c9f20a6cdc7.png)
+
+In this plot, blue represents one TOF sensor, green represents the other TOF sensor, red represents pitch, and black represents roll. The results were as expected. I plotted this data in two different plots because the optimal y-axis scaling to see the trends clearly was very different for the TOF sensor versus the IMU.
 
 
