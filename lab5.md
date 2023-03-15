@@ -10,7 +10,7 @@ The motors and the Artemis are powered by separate batteries, with the motors' b
 
 ## Lab Tasks
 
-I connected the power supply and oscilloscope to one motor driver, as seen below. I chose to set the power supply at 3.7V because that is the voltage the battery is rated at.
+I connected the power supply and oscilloscope to one motor driver, as seen below. I chose to set the power supply to 3.7V because that is the voltage the battery is rated at.
 
 ![Picture1](https://user-images.githubusercontent.com/123786420/225213523-91ba58c8-c71a-489d-9725-d6d19a9a9b59.jpg)
 
