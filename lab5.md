@@ -22,4 +22,10 @@ The oscilloscope waveform confirmed that I could regulate the power on the motor
 
 ![Picture2](https://user-images.githubusercontent.com/123786420/225213640-a725cc5a-cff2-4815-9396-5a0e9533cd28.jpg)
 
+I was able to run the motor in both directions, as seen in the following video, using the code below.
+
+<script src="https://gist.github.com/sarika2446/3059fe69c1c9e9a47f7973b2f211a27a.js"></script>
+
+
+
 I repeated this process for the second motor driver and got the same results.
