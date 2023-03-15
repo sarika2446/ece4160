@@ -38,9 +38,9 @@ This was achieved using the following code.
 
 <script src="https://gist.github.com/sarika2446/6e64bd3ed085b860a3fe03fb5b53f0b9.js"></script>
 
-As seen below, I installed all of the components in the car chassis.
+The picture below shows the car chassis with all of the components installed. I later secured the wires down further.
 
-
+![Picture3](https://user-images.githubusercontent.com/123786420/225226531-426426af-f8f0-47a1-8008-fc9e0cd00271.jpg)
 
 By testing out increasingly lower PWM values, I found that the lower limit in PWM value for which the robot moves forward and makes turns on the ground was 40. While trying to make the car drive in a straight line, I found that I needed to implement a calibration factor of x1.25 to the PWM value of the left motor. 
 
