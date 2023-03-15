@@ -22,10 +22,39 @@ The oscilloscope waveform confirmed that I could regulate the power on the motor
 
 ![Picture2](https://user-images.githubusercontent.com/123786420/225213640-a725cc5a-cff2-4815-9396-5a0e9533cd28.jpg)
 
-I was able to run the motor in both directions, as seen in the following video, using the code below.
+After replacing the control PCB with my motor driver, I was able to run the motor in both directions, as seen in the following video, using the code below.
 
 <script src="https://gist.github.com/sarika2446/3059fe69c1c9e9a47f7973b2f211a27a.js"></script>
 
-
+[![Wheels](https://img.youtube.com/vi/P4ZfheMGi4o/0.jpg)](https://www.youtube.com/watch?v=P4ZfheMGi4o "Wheels")
 
 I repeated this process for the second motor driver and got the same results.
+
+Next, I powered both motor drivers using the 850mAh battery and was able to control both wheels as expected.
+
+[![Wheels](https://img.youtube.com/vi/UsECsax5K7U/0.jpg)](https://www.youtube.com/watch?v=UsECsax5K7U "Wheels")
+
+This was achieved using the following code.
+
+<script src="https://gist.github.com/sarika2446/6e64bd3ed085b860a3fe03fb5b53f0b9.js"></script>
+
+As seen below, I installed all of the components in the car chassis.
+
+
+
+By testing out increasingly lower PWM values, I found that the lower limit in PWM value for which the robot moves forward and makes turns on the ground was 40. While trying to make the car drive in a straight line, I found that I needed to implement a calibration factor of x1.25 to the PWM value of the left motor. 
+
+In the video below, the car moves in a fairly straight line, following the line in the tiles, for about 7 feet.
+
+[![Straight](https://img.youtube.com/vi/vh_hB88Teu0/0.jpg)](https://www.youtube.com/watch?v=vh_hB88Teu0 "Straight")
+
+This was achieved using the following code.
+
+<script src="https://gist.github.com/sarika2446/730a59f91d294e6aa5233dab61e59d3a.js"></script>
+
+Finally I was able to demonstrate open loop control, as seen below, using the following code.
+
+<script src="https://gist.github.com/sarika2446/4495c6edca9f789f570377556c4ef80c.js"></script>
+
+[![Open Loop](https://img.youtube.com/vi/pZCUjEwJZMk/0.jpg)](https://www.youtube.com/watch?v=pZCUjEwJZMk "Open Loop")
+
