@@ -52,7 +52,7 @@ This was achieved using the following code.
 
 <script src="https://gist.github.com/sarika2446/730a59f91d294e6aa5233dab61e59d3a.js"></script>
 
-Finally I was able to demonstrate open loop control, as seen below, using the following code.
+Finally, I was able to demonstrate open loop control, as seen below, using the following code.
 
 <script src="https://gist.github.com/sarika2446/4495c6edca9f789f570377556c4ef80c.js"></script>
 
