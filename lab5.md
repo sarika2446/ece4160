@@ -12,7 +12,7 @@ The motors and the Artemis are powered by separate batteries, with the motors' b
 
 I connected the power supply and oscilloscope to one motor driver, as seen below.
 
-![IMG_1117](https://user-images.githubusercontent.com/123786420/225213305-c44fce19-49dd-4a6f-ad62-e77cf0b1167a.jpg)
+![Picture1](https://user-images.githubusercontent.com/123786420/225213408-fcc0cc01-6b2a-4c54-b728-772417319987.jpg)
 
 I then ran the following code on the Artemis send the motor driver PWM signals.
 
@@ -20,6 +20,6 @@ I then ran the following code on the Artemis send the motor driver PWM signals.
 
 The oscilloscope waveform confirmed that I could regulate the power on the motor driver output.
 
-![IMG_1102](https://user-images.githubusercontent.com/123786420/225213323-e2925b30-831d-44de-ac73-d6dd69c5ebfd.jpg)
+![Picture2](https://user-images.githubusercontent.com/123786420/225213420-f1bc721e-d0b0-4dbc-a376-0321cc06f45f.jpg)
 
 I repeated this process for the second motor driver and got the same results.
