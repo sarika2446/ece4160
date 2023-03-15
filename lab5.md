@@ -20,6 +20,6 @@ I then ran the following code on the Artemis send the motor driver PWM signals.
 
 The oscilloscope waveform confirmed that I could regulate the power on the motor driver output.
 
-![Picture2](https://user-images.githubusercontent.com/123786420/225213547-6ce04bff-d5b7-48ab-a4f1-98734560ce8e.jpg)
+![Picture2](https://user-images.githubusercontent.com/123786420/225213640-a725cc5a-cff2-4815-9396-5a0e9533cd28.jpg)
 
 I repeated this process for the second motor driver and got the same results.
