@@ -1,4 +1,4 @@
-'''
+
 #include "BLECStringCharacteristic.h"
 #include "EString.h"
 #include "RobotCommand.h"
@@ -257,4 +257,3 @@ loop()
         Serial.println("Disconnected");
     }
 }
-'''
