@@ -10,7 +10,7 @@ To send and receive debugging data over Bluetooth, I created a command called GE
 
 ## Lab Tasks
 
-I chose to do task A.
+I chose to do Task A.
 
 Through extensive testing, I found that a controller with only the proportional term worked best for my system and caused minimal overshooting and oscillation. I started out by increasing the proportional gain from 0 to 0.03, where I saw a lot of oscillation. I then reduced it by a factor of 2 to 0.015, and found that this caused the robot to stop at a distance very close to 304 mm from the obstacle. I found that I needed to implement a small range around 304 mm in which the target would be considered reached because the ToF sensor would not always detect a value of 304 mm even if it passed that point due to the relatively low sampling frequency.
 
