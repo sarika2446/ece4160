@@ -10,11 +10,15 @@ To send and receive debugging data over Bluetooth, I created a command called GE
 
 ## Lab Tasks
 
-Through extensive testing, I found that a controller with only the proportional term worked best for my system. I started out by increasing the proportional gain from 0 to 0.03, where I saw a lot of oscillation. I then reduced it by a factor of 2 to 0.015, and found that this caused the robot to stop at a distance very close to 304 mm from the obstacle. I found that I needed a small range around 304 mm in which the target would be considered reached because the ToF would not always detect a value of 304 mm even if it passed that point, sometimes due to sampling frequency.
+Through extensive testing, I found that a controller with only the proportional term worked best for my system and caused minimal overshooting and oscillation. I started out by increasing the proportional gain from 0 to 0.03, where I saw a lot of oscillation. I then reduced it by a factor of 2 to 0.015, and found that this caused the robot to stop at a distance very close to 304 mm from the obstacle. I found that I needed to implement a small range around 304 mm in which the target would be considered reached because the ToF sensor would not always detect a value of 304 mm even if it passed that point due to the relatively low sampling frequency.
 
-I ran three trials using the code below, in which the robot stopped at 305 mm, 305 mm, and 304 mm from the obstacle with minimal oscillation, as seen in the videos below.
+I used the short distance mode for higher accuracy, but this meant I could not start the car from a very far distance from the obstacle and still have it operate efficiently. I also tried to decrease sampling time by only sampling the distance once each loop and passing that distance as a parameter to the PID control function. I also tried to increase the sampling rate by decreasing sampling time by sending the timestamped data via Bluetooth only after the PID control loop had finished executing and removing any delays that were in the loop.
 
 <script src="https://gist.github.com/sarika2446/cc1df2c13a3bf3afa6c2e5523a372ccf.js"></script>
+
+I ran three trials using the code above, starting from a distance of either 2 meters or approximately 1.6 meters, and the robot stopped at 305 mm, 305 mm, and 304 mm from the obstacle with minimal oscillation, as seen in the videos below. In the following graphs of the ToF and motor input data, the first, second, and third trial are represented by the blue, green, and red lines, respectively.
+
+I also ensured that the PWM value would never be in the deadband zone by constraining it to be between 40 and 255 when in motion. However, the low proportional gain term caused the PWM to only either be 0 or 40.
 
 ![Unknown-21](https://user-images.githubusercontent.com/123786420/227113278-8958d861-d863-4f9c-9633-d65d477f4684.png)
 
