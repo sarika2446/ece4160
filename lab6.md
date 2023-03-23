@@ -20,3 +20,8 @@ I ran three trials using the code below, in which the robot stopped at 305 mm, 3
 
 ![Unknown-22](https://user-images.githubusercontent.com/123786420/227113296-c9e50ff3-8dcf-4f9d-a5c7-9d21c8d71b00.png)
 
+[![Trial 1](https://img.youtube.com/vi/HWcBgK-kpQY/0.jpg)](https://www.youtube.com/watch?v=HWcBgK-kpQY "Trial 1")
+
+[![Trial 2](https://img.youtube.com/vi/twxQ9wwRzno/0.jpg)](https://www.youtube.com/watch?v=twxQ9wwRzno "Trial 2")
+
+[![Trial 3](https://img.youtube.com/vi/K7b_ZMfY2p4/0.jpg)](https://www.youtube.com/watch?v=K7b_ZMfY2p4 "Trial 3")
