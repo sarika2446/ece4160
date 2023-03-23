@@ -10,6 +10,8 @@ To send and receive debugging data over Bluetooth, I created a command called GE
 
 ## Lab Tasks
 
+I chose to do task A.
+
 Through extensive testing, I found that a controller with only the proportional term worked best for my system and caused minimal overshooting and oscillation. I started out by increasing the proportional gain from 0 to 0.03, where I saw a lot of oscillation. I then reduced it by a factor of 2 to 0.015, and found that this caused the robot to stop at a distance very close to 304 mm from the obstacle. I found that I needed to implement a small range around 304 mm in which the target would be considered reached because the ToF sensor would not always detect a value of 304 mm even if it passed that point due to the relatively low sampling frequency.
 
 I used the short distance mode for higher accuracy, but this meant I could not start the car from a very far distance from the obstacle and still have it operate efficiently. I also tried to decrease sampling time by only sampling the distance once each loop and passing that distance as a parameter to the PID control function. I also tried to increase the sampling rate by decreasing sampling time by sending the timestamped data via Bluetooth only after the PID control loop had finished executing and removing any delays that were in the loop.
