@@ -22,12 +22,20 @@ I ran three trials using the code above, starting from a distance of either 2 me
 
 I also ensured that the PWM value would never be in the deadband zone by constraining it to be between 40 and 255 when in motion. However, the low proportional gain term caused the PWM to only either be 0 or 40.
 
-![Unknown-21](https://user-images.githubusercontent.com/123786420/227113278-8958d861-d863-4f9c-9633-d65d477f4684.png)
+### Graphs
 
-![Unknown-22](https://user-images.githubusercontent.com/123786420/227113296-c9e50ff3-8dcf-4f9d-a5c7-9d21c8d71b00.png)
+![Unknown-23](https://user-images.githubusercontent.com/123786420/227138668-0d68a4a4-e4e0-408f-9fc9-6e91cff70360.png)
+
+![Unknown-24](https://user-images.githubusercontent.com/123786420/227138691-f12ba5f6-81ed-4424-b899-77120e20eb5a.png)
+
+### Trial 1
 
 [![Trial 1](https://img.youtube.com/vi/HWcBgK-kpQY/0.jpg)](https://www.youtube.com/watch?v=HWcBgK-kpQY "Trial 1")
 
+### Trial 2
+
 [![Trial 2](https://img.youtube.com/vi/twxQ9wwRzno/0.jpg)](https://www.youtube.com/watch?v=twxQ9wwRzno "Trial 2")
+
+### Trial 3
 
 [![Trial 3](https://img.youtube.com/vi/K7b_ZMfY2p4/0.jpg)](https://www.youtube.com/watch?v=K7b_ZMfY2p4 "Trial 3")
