@@ -49,7 +49,7 @@ I used the following function to extrapolate every third distance data point bas
 
 <script src="https://gist.github.com/sarika2446/f200e49a58a3d139c3a8bd3b120d0811.js"></script>
 
-A video of a trial with the extrapolated data points is below. I found that the car would reach roughly the correct distance from the wall, but would then oscillate without stopping. The TOF and extrapolated distance data also showed that the target distance had been reached very quickly. After filming this video, I found that I needed to call the function to stop the motors outside of the PID control function, which then fixed the oscillation issue. 
+A video of a trial with the extrapolated data points is below. I found that the car would reach roughly the correct distance from the wall, but would then oscillate excessively before stopping, even when the TOF and extrapolated distance data showed that the target distance had been reached quickly. After filming this video, I found that I needed to call the function to stop the motors outside of the PID control function, which then fixed the oscillation issue. 
 
 [![Trial](https://img.youtube.com/vi/gCbYJXaKya8/0.jpg)](https://www.youtube.com/watch?v=gCbYJXaKya8 "Trial")
 
