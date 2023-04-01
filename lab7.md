@@ -36,3 +36,5 @@ The Kalman filter was pretty close to the actual data after the first couple of 
 I used the following function to extrapolate every third distance data point based on the previous two TOF sensor readings.
 
 <script src="https://gist.github.com/sarika2446/f200e49a58a3d139c3a8bd3b120d0811.js"></script>
+
+[![Trial](https://img.youtube.com/vi/gCbYJXaKya8/0.jpg)](https://www.youtube.com/watch?v=gCbYJXaKya8 "Trial")
