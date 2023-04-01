@@ -53,4 +53,9 @@ A video of a trial with the extrapolated data points is below. I found that the 
 
 [![Trial](https://img.youtube.com/vi/gCbYJXaKya8/0.jpg)](https://www.youtube.com/watch?v=gCbYJXaKya8 "Trial")
 
+The extrapolated data was somewhat close to the actual data, but it did not predict that the robot would reach the target distance before it did.
+
+![Unknown-30](https://user-images.githubusercontent.com/123786420/229308523-f4448acf-7a88-4891-922d-28011938d37b.png)
+
+
 
