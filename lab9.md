@@ -16,7 +16,7 @@ https://user-images.githubusercontent.com/123786420/232996587-10f94f04-a77d-4d11
 
 I chose to take my measurements in the hallway outside of the lab, starting at the orientation seen below seen below.
 
-![car](https://user-images.githubusercontent.com/123786420/233005775-a35eb08a-4880-48e4-9ccf-6790e11ffbb2.jpg)
+![IMG_3202](https://user-images.githubusercontent.com/123786420/233005926-9dc48a66-6be7-4337-a1f5-036f1d9a3cdd.jpg)
 
 Below is a plot of the readings taken from one complete rotation in the hallway.
 
