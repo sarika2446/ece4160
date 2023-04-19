@@ -14,6 +14,4 @@ I used the following code to make my robot do a flip at 0.5m from the wall.
 
 Below is a video of my robot doing a flip.
 
-https://user-images.githubusercontent.com/123786420/232985439-6df080cd-a0fd-4ac5-9fb4-469dfb6adad6.mov
-
 [![Trial](https://img.youtube.com/vi/ydgqpQbqV2s/0.jpg)](https://www.youtube.com/watch?v=ydgqpQbqV2s "Trial")
