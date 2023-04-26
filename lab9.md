@@ -2,11 +2,17 @@
 
 ## Control
 
-For this lab, I chose to do implement open loop control. In order to get open loop control to work, I had to ensure that my robot could spin on its axis slowly while taking TOF sensor measurements. 
+The goal of the lab was to create a map of a specific room, which would be used for future navigation and localization tasks. To construct the map, the robot needed to be placed at different points in the room and rotate while collecting ToF readings. The room being mapped, in this case the hallway, was static.
+
+I chose to implement orientation control, where I was able to get my robot to do on-axis turns in small increments using a PID controller.
 
 I used the following code to accomplish collect this data and send it to the Python end via Bluetooth.
 
 <script src="https://gist.github.com/sarika2446/9bc6df13f540c4c641ba04e589819775.js"></script>
+
+I used the following function to implement PID control for the orientation, with a target angle of 25 degrees for each increment.
+
+<script src="https://gist.github.com/sarika2446/21f59e39d031b0e0c2350a95f5159c00.js"></script>
 
 Below is a video of my robot turning.
 
