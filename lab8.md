@@ -2,13 +2,13 @@
 
 ## Task A: Position Control
 
-For this lab, I had to use a robot from a previous year since my motor driver stopped working. 
+For this lab, I chose to do the position control task. 
 
 The robot started at the designated line, which was <4m from the wall, and drove towards the center of the sticky mat. The setup is shown in the picture below.
 
 ![IMG_3202](https://user-images.githubusercontent.com/123786420/231438345-684adfb5-c913-4458-a7bd-7e5af1433ef8.jpg)
 
-I used the following code to make my robot do a flip at 0.5m from the wall.
+I used the following code to time my robot do a flip at 0.5m from the wall. The robot drove at full speed forward for a set number of seconds, and then immediately started driving backward at full speed for a set number of seconds.
 
 <script src="https://gist.github.com/sarika2446/51485a629df627ade8af4f6ed2402c3a.js"></script>
 
