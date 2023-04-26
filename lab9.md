@@ -8,7 +8,7 @@ I chose to implement orientation control, where I was able to get my robot to do
 
 I used the following code to accomplish collect this data and send it to the Python end via Bluetooth.
 
-<script src="https://gist.github.com/sarika2446/9bc6df13f540c4c641ba04e589819775.js"></script>
+<script src="https://gist.github.com/sarika2446/b55a06cb10055132facb7352c82f1776.js"></script>
 
 I used the following function to implement PID control for the orientation, with a target angle of 25 degrees for each increment.
 
