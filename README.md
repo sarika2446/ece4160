@@ -12,4 +12,5 @@ Hi! My name is Sarika Kannan and I am a senior majoring in ECE. I am a member of
 [Lab 6](/lab6.md)\
 [Lab 7](/lab7.md)\
 [Lab 8](/lab8.md)\
-[Lab 9](/lab9.md)
+[Lab 9](/lab9.md)\
+[Lab 10](/lab10.md)
