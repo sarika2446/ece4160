@@ -22,7 +22,7 @@ I then implemented the function for the prediction step of the Bayes filter, _pr
 
 <script src="https://gist.github.com/sarika2446/62773d1d3b4fc5654d4390f6aa9dd9f8.js"></script>
 
-Next, I implemented the function _sensor_model_, which calculated p(z|x). This function took a 1D array consisting of the true observations for a specific robot pose in the map as an argument and returned a 1D array, with a size equal to the number of observations per cell, with the likelihoods of each individual sensor measurement.
+Next, I implemented the function _sensor_model_, which calculated p(z\|x). This function took a 1D array consisting of the true observations for a specific robot pose in the map as an argument and returned a 1D array, with a size equal to the number of observations per cell, with the likelihoods of each individual sensor measurement.
 
 <script src="https://gist.github.com/sarika2446/35fc5ed0657528ab4a3a83e66b8062dc.js"></script>
 
