@@ -6,6 +6,7 @@ The Bayes Filter is an algorithm that uses measurements taken and control data t
 
 <img width="600" alt="Screen Shot 2023-05-09 at 5 07 10 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/9b4e7041-7d46-4bac-988e-ee1130bf11b6">
 
+
 To perform grid localization for the sample trajectory, I had to write the necessary code for the functions _compute_control_, _odom_motion_model_, _prediction_step_, _sensor_model_, and _update_step_ given in the Lab 10 notebook.
 
 For the first function, _compute_control_, I was able to calculate initial rotation, translation, and final rotation using the equations given in lecture, as seen below. This function extracts the control information based on the odometry motion model, given the current and previous odometry poses.
