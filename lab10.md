@@ -37,6 +37,12 @@ Finally, I implemented the function _update_step_, which performed the update st
 
 <script src="https://gist.github.com/sarika2446/82553d97453a68809f4306557c593912.js"></script>
 
-I then used these functions to perform grid localization for the given sample trajectory, as seen in the video below, where red is the odometry model, blue is the belief of the robot, and green is the truth pose.
+I then used these functions to perform grid localization for the given sample trajectory, as seen in the video below, where red is the odometry measurements, blue is the belief of the robot, and green is the truth pose.
 
 [![Trajectory](https://img.youtube.com/vi/BOzCaoiIVz0/0.jpg)](https://www.youtube.com/watch?v=BOzCaoiIVz0 "Trajectory")
+
+The Bayes Filter works very well for the most part, although at times its path was perpendicular to the robots true path, although it may have just needed a couple of update steps to correct itself.
+
+### References
+
+I referenced Anya's code extensively to better understand what was required.
