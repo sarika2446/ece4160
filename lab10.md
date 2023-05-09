@@ -31,3 +31,5 @@ Finally, I implemented the function _update_step_, which performed the update st
 <script src="https://gist.github.com/sarika2446/82553d97453a68809f4306557c593912.js"></script>
 
 I then used these functions to perform grid localization for the given sample trajectory, as seen in the video below. 
+
+[![Trajectory](https://img.youtube.com/vi/BOzCaoiIVz0/0.jpg)](https://www.youtube.com/watch?v=BOzCaoiIVz0 "Trajectory")
