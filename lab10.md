@@ -14,7 +14,7 @@ I implemented this in Python using the code below.
 
 Next, I implemented the function for the odometry motion model, _odom_motion_model_, as seen below. This was based on the algorithm given in lecture.
 
-<img width="600" alt="Screen Shot 2023-05-09 at 4 07 37 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/d2f394c5-0a93-4ef8-9226-3d23d6e84f5f">
+<img width="600" alt="Screen Shot 2023-05-09 at 4 23 10 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/5a3468be-22eb-4cc3-9bed-f89476e6e8db">
 
 <script src="https://gist.github.com/sarika2446/1be1b96fb04b214b71f364c4cacbafbf.js"></script>
 
