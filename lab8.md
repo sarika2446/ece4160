@@ -19,3 +19,9 @@ Below are videos of three trials in which my robot was able to successfully perf
 [![Trial 3](https://img.youtube.com/vi/sxPPAM8m-3o/0.jpg)](https://www.youtube.com/watch?v=sxPPAM8m-3o "Trial 3")
 
 [![Trial 1](https://img.youtube.com/vi/EDp8gBolsIw/0.jpg)](https://www.youtube.com/watch?v=EDp8gBolsIw "Trial 1")
+
+Below are the plots from the TOF sensors for the three trials. The distance data was collected until the flip.
+
+![Unknown-36](https://github.com/sarika2446/ece4160/assets/123786420/00fb06d8-3bf9-4a19-be08-731e0af964b2)
+
+
