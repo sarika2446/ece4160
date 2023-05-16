@@ -14,8 +14,8 @@ I used the following code to time my robot do a flip at 0.5m from the wall. The 
 
 Below are videos of three trials in which my robot was able to successfully perform a flip.
 
-[![Trial 1](https://img.youtube.com/vi/EDp8gBolsIw/0.jpg)](https://www.youtube.com/watch?v=EDp8gBolsIw "Trial 1")
-
 [![Trial 2](https://img.youtube.com/vi/TwxNxdsbZzk/0.jpg)](https://www.youtube.com/watch?v=TwxNxdsbZzk "Trial 2")
 
 [![Trial 3](https://img.youtube.com/vi/sxPPAM8m-3o/0.jpg)](https://www.youtube.com/watch?v=sxPPAM8m-3o "Trial 3")
+
+[![Trial 1](https://img.youtube.com/vi/EDp8gBolsIw/0.jpg)](https://www.youtube.com/watch?v=EDp8gBolsIw "Trial 1")
