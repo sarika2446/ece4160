@@ -16,7 +16,7 @@ I used the following function to implement PID control for the orientation, with
 
 Below is a video of my robot turning.
 
-https://user-images.githubusercontent.com/123786420/232996587-10f94f04-a77d-4d11-a67e-50f908a23207.mov
+[![Spin](https://img.youtube.com/vi/udNTjOFebKc/0.jpg)](https://www.youtube.com/watch?v=udNTjOFebKc "Spin")
 
 ## Read out Distances
 
