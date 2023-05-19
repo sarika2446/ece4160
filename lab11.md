@@ -50,4 +50,20 @@ I then implemented the member function perform_observation_loop of class RealRob
         
         return sensor_ranges, sensor_bearings
 
+## Running Update Step on Marked Poses
 
+### (-3,-2)
+<img width="600" alt="Screen Shot 2023-05-18 at 8 49 48 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/c43fb964-48f2-4f1b-ac88-644c1b899ad5">
+
+### (0,3)
+<img width="600" alt="Screen Shot 2023-05-18 at 8 44 17 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/c2cbc26c-15d8-4189-87b1-4c29d2ef05c6">
+
+### (5,3)
+
+<img width="600" alt="Screen Shot 2023-05-18 at 9 07 00 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/93c59f45-8369-427f-93ea-5f4df12d92e5">
+
+### (5,-3)
+
+<img width="600" alt="Screen Shot 2023-05-18 at 9 08 45 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/0b6b186b-89dc-4069-8403-78aeb48808e9">
+
+Generally, very inaccurate beliefs in comparison to ground truths.
