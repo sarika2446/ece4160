@@ -66,4 +66,4 @@ I then implemented the member function perform_observation_loop of class RealRob
 
 <img width="600" alt="Screen Shot 2023-05-18 at 9 08 45 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/0b6b186b-89dc-4069-8403-78aeb48808e9">
 
-Generally, very inaccurate beliefs in comparison to ground truths.
+Generally, very inaccurate beliefs in comparison to ground truths. Did better for the first two.
