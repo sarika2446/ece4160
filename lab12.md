@@ -33,7 +33,7 @@ In the interest of time, we then attempted open loop control of the robot, using
 
 Although open loop control can be unreliable due to how much variability there can be between runs, we found this approach to be decently successful, hitting 6 out of the 9 waypoints.
 
-Below is a video of one of our best runs.
+Below is a video of our best run.
 
 [![OLC](https://img.youtube.com/vi/wp4BHi55qmI/0.jpg)](https://www.youtube.com/watch?v=wp4BHi55qmI "OLC")
 
