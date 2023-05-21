@@ -3,7 +3,7 @@ Using the provided code, I was able to successfully run the simulation.
 
 <img width="752" alt="Screen Shot 2023-05-17 at 8 55 36 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/8b992c59-ae27-4b39-a757-d409884ac207">
 
-I then implemented the member function perform_observation_loop of class RealRobot. I ended up taking 20 measurements for each rotation instead of 18 because I found that to be the most accurate for my robot.
+I then implemented the member function perform_observation_loop of class RealRobot. I ended up taking 20 measurements for each rotation instead of 18 because I found that to be the most accurate for my robot. I was able to reuse my code from Lab 9 for this.
 
     def perform_observation_loop(self, rot_vel=120):
         """Perform the observation loop behavior on the real robot, where the robot does  
@@ -53,17 +53,21 @@ I then implemented the member function perform_observation_loop of class RealRob
 ## Running Update Step on Marked Poses
 
 ### (-3,-2)
-<img width="600" alt="Screen Shot 2023-05-18 at 8 49 48 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/c43fb964-48f2-4f1b-ac88-644c1b899ad5">
+<img width="600" alt="Screen Shot 2023-05-21 at 9 38 46 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/a367ff1a-676b-4c1c-be8e-81a562d84211">
+
 
 ### (0,3)
-<img width="600" alt="Screen Shot 2023-05-18 at 8 44 17 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/c2cbc26c-15d8-4189-87b1-4c29d2ef05c6">
+<img width="600" alt="Screen Shot 2023-05-21 at 9 36 44 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/5217f89c-8883-477b-b9fd-e613580fbeb1">
+
 
 ### (5,3)
+<img width="600" alt="Screen Shot 2023-05-21 at 9 35 16 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/3676aa4e-a401-465f-987f-dffa52163972">
 
-<img width="600" alt="Screen Shot 2023-05-18 at 9 07 00 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/93c59f45-8369-427f-93ea-5f4df12d92e5">
 
 ### (5,-3)
+<img width="600" alt="Screen Shot 2023-05-21 at 9 29 52 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/0d10aae9-85cb-4b76-a922-a5cb914c79de">
 
-<img width="600" alt="Screen Shot 2023-05-18 at 9 08 45 PM" src="https://github.com/sarika2446/ece4160/assets/123786420/0b6b186b-89dc-4069-8403-78aeb48808e9">
+
+
 
 Generally, very inaccurate beliefs in comparison to ground truths. Did better for the first two.
