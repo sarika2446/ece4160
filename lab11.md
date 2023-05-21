@@ -59,20 +59,18 @@ I then implemented the member function perform_observation_loop of class RealRob
 
 
 ### (0,3)
-<img width="600" alt="Screen Shot 2023-05-21 at 9 36 44 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/5217f89c-8883-477b-b9fd-e613580fbeb1">
+<img width="600" alt="Screen Shot 2023-05-21 at 9 29 52 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/0d10aae9-85cb-4b76-a922-a5cb914c79de">
 
 <img width="457" alt="Screen Shot 2023-05-21 at 10 01 35 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/3104e017-3567-4e78-8f16-856acde61c48">
 
 
 ### (5,3)
-
-<img width="600" alt="Screen Shot 2023-05-21 at 10 11 15 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/4963bedc-ceb6-44c7-9d71-45a218c15002">
+<img width="600" alt="Screen Shot 2023-05-21 at 9 35 16 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/a56b1c99-8d63-437c-ab86-f54e50d4956a">
 
 <img width="459" alt="Screen Shot 2023-05-21 at 10 06 48 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/f7c9295a-8f1e-42be-a28e-dba7e08a32d4">
 
 
 ### (5,-3)
-<img width="600" alt="Screen Shot 2023-05-21 at 9 29 52 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/0d10aae9-85cb-4b76-a922-a5cb914c79de">
 
 <img width="459" alt="Screen Shot 2023-05-21 at 9 55 38 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/952110a6-7362-4b2e-b655-d80ea411fd9f">
 
