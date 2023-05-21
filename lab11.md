@@ -27,7 +27,7 @@ I then implemented the member function perform_observation_loop of class RealRob
         sensor_ranges = []
         sensor_bearings = []
         
-        for sample in data1:
+        for sample in data_list:
           count = 1
           flag = 0
           string = ''
@@ -55,19 +55,26 @@ I then implemented the member function perform_observation_loop of class RealRob
 ### (-3,-2)
 <img width="600" alt="Screen Shot 2023-05-21 at 9 38 46 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/a367ff1a-676b-4c1c-be8e-81a562d84211">
 
+<img width="463" alt="Screen Shot 2023-05-21 at 9 54 19 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/328c8b7c-4c1c-4644-ac3b-7477401dcf3e">
+
 
 ### (0,3)
 <img width="600" alt="Screen Shot 2023-05-21 at 9 36 44 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/5217f89c-8883-477b-b9fd-e613580fbeb1">
 
+<img width="457" alt="Screen Shot 2023-05-21 at 10 01 35 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/3104e017-3567-4e78-8f16-856acde61c48">
+
 
 ### (5,3)
-<img width="600" alt="Screen Shot 2023-05-21 at 9 35 16 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/3676aa4e-a401-465f-987f-dffa52163972">
+
+<img width="600" alt="Screen Shot 2023-05-21 at 10 11 15 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/4963bedc-ceb6-44c7-9d71-45a218c15002">
+
+<img width="459" alt="Screen Shot 2023-05-21 at 10 06 48 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/f7c9295a-8f1e-42be-a28e-dba7e08a32d4">
 
 
 ### (5,-3)
 <img width="600" alt="Screen Shot 2023-05-21 at 9 29 52 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/0d10aae9-85cb-4b76-a922-a5cb914c79de">
 
+<img width="459" alt="Screen Shot 2023-05-21 at 9 55 38 AM" src="https://github.com/sarika2446/ece4160/assets/123786420/952110a6-7362-4b2e-b655-d80ea411fd9f">
 
 
-
-Generally, very inaccurate beliefs in comparison to ground truths. Did better for the first two.
+It was very accurate for the points (-3,-2) and (5,-3), with the ground truth and belief points overlapping exactly such that the ground truth point was not even visible. For the point (0,3), the y-coordinate was accurate, but the x-coordinate was off by 1.219 m. For the point (5,3), the y-coordinate was accurate, but the x-coordinate was also off by 1.219 m. Considering that both of these points with the y-coordinate 3 are off by the exact same amount in the x-direction, some adjustments may need to be made. It is unclear to me why this might be happening, since it is unlikely to be due to random noise as the error was the exact same.
